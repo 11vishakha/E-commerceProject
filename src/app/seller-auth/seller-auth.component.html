@@ -1,6 +1,8 @@
 
-<form [formGroup]="signUp" >
-<section class="vh-100 gradient-custom" *ngIf="!dologin">
+<!-- sign up form -->
+<div *ngIf="!dologin">
+<form  >
+<section class="vh-100 gradient-custom" >
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -14,24 +16,24 @@
 
 
                 <div class="form-outline form-white mb-4">
-                    <input type="text" id="typeEmailX" class="form-control form-control-lg" formControlName="Name" name="Name" />
-                    <label class="form-label" for="typeEmailX">Name</label>
+                    <input type="text"  class="form-control form-control-lg" formControlName="Name" name="Name" />
+                    <label class="form-label" >Name</label>
                   </div>
   
                 <div class="form-outline form-white mb-4">
-                  <input type="email" id="typeEmailX" class="form-control form-control-lg" formControlName="Email" name="Email" />
-                  <label class="form-label" for="typeEmailX">Email</label>
+                  <input type="email" class="form-control form-control-lg" formControlName="Email" name="Email" />
+                  <label class="form-label" >Emnail</label>
                 </div>
   
                 <div class="form-outline form-white mb-4">
-                  <input type="password" id="typePasswordX" class="form-control form-control-lg" formControlName="Password" name="Password" />
-                  <label class="form-label" for="typePasswordX">Password</label>
+                  <input type="password"  class="form-control form-control-lg" formControlName="Password" name="Password" />
+                  <label class="form-label" >Password</label>
                 </div>
   
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Sign Up</button>
                 </div>
               <div>
-                <p class="mb-0">Already have an account? <a href="#!"  (click)="openSignUp()" class="text-white-50 fw-bold">Click to login</a>
+                <p class="mb-0">Already have an account? <a (click)="openLogin()" class="text-white-50 fw-bold">Click to login</a>
                 </p>
               </div>
   
@@ -42,6 +44,7 @@
     </div>
   </section>
 </form>
+</div>
 
 
 
@@ -50,8 +53,9 @@
 
 
 <!-- login form -->
-<form [formGroup]="LoginUp">
-<section class="vh-100 gradient-custom" *ngIf="dologin">
+<div *ngIf="dologin">
+<form >
+<section class="vh-100 gradient-custom" >
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -87,3 +91,4 @@
     </div>
   </section>
 </form>
+</div>
