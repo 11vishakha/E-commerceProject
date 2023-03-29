@@ -1,19 +1,129 @@
 {
-  "posts": [
+  "seller": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Vishakha",
+      "password": "abc@123",
+      "email": "abc@gmail.com"
+    },
+    {
+      "name": "VishakhaM",
+      "password": "abc@12345",
+      "email": "abcd@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "ABCDE",
+      "password": "abc@123456",
+      "email": "abcde@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "ABCDE",
+      "password": "abc@123456",
+      "email": "abcde@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "ABCDE",
+      "password": "abc@123456",
+      "email": "abcde@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "ramesh",
+      "password": "ramesh@123456",
+      "email": "rmhasaye@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "Varsha",
+      "password": "varsha@123456",
+      "email": "vmhasaye@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "Sheetal",
+      "password": "sheetal@123456",
+      "email": "sshinde@gmail.com",
+      "id": 8
+    },
+    {
+      "Name": "vishakha12",
+      "Password": "ramesh0123",
+      "Email": "vishakah12@gmail.com",
+      "id": 9
+    },
+    {
+      "Name": " Sheetal",
+      "Password": "sheetal1234",
+      "Email": "sshinde@gmail.com",
+      "id": 10
+    },
+    {
+      "Name": "Vishakha",
+      "Password": "123456@qwe",
+      "Email": "abc123@gmail.com",
+      "id": 11
+    },
+    {
+      "Name": "trishaa",
+      "Password": "poiuyt",
+      "Email": "tgupta@gmail.com",
+      "id": 12
+    },
+    {
+      "Name": "vishakha",
+      "Password": "123@asd",
+      "Email": "mhasaye123@gmail.com",
+      "id": 13
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 14
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 15
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 16
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 17
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 18
+    },
+    {
+      "Name": " ",
+      "Password": " ",
+      "Email": " ",
+      "id": 19
     }
   ],
-  "comments": [
+  "products": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "length": " ",
+      "proname": " ",
+      "price": " ",
+      "category": " ",
+      "color": " ",
+      "description": " ",
+      "img": " ",
+      "id": " "
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -1,35 +1,60 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white logo" routerLink="" >OnCard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     
-      <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white logo" routerLink="">OnCard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <form class="d-flex">
-          <input type="text" class="form-control " placeholder="Search">
-          <button type="button" class="btn btn-warning mx-2">search</button>
-         </form>
-       
-        <ul class="navbar-nav ms-auto">
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <form class="d-flex">
+        <input type="text" class="form-control " placeholder="Search">
+        <button type="button" class="btn btn-warning mx-2">search</button>
+      </form>
+
+      <div [ngSwitch]="menuType">
+        <ul class="navbar-nav ms-auto" *ngSwitchCase="'default'">
           <li class="nav-item">
-            <a class="nav-link active text-white" routerLink="seller-auth" routerLinkActive="active-link">Seller</a>
+            <a class="nav-link active text-white" href="seller-auth">Seller</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" routerLink="#" routerLinkActive="active-link">Home</a>
+            <a class="nav-link text-white" routerLink="#">Home</a>
           </li>
-         
+
           <li class="nav-item">
-            <a class="nav-link text-white" routerLink="#" routerLinkActive="active-link">Login</a>
+            <a class="nav-link text-white" href="#">Login</a>
           </li>
-  
+
           <li class="nav-item">
-            <a class="nav-link text-white" routerLink="#" routerLinkActive="active-link">Card</a>
+            <a class="nav-link text-white" href="#">Card</a>
           </li>
-  
+
         </ul>
+
+
+        <ul class="navbar-nav ms-auto" *ngSwitchCase="'seller'">
+          <li class="nav-item">
+            <a class="nav-link active text-white" routerLink="seller-auth">{{sellerName | titlecase}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="seller-add-pro">+Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="seller-home">List</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" (click)="logout()">Logout</a>
+          </li>
+
+        </ul>
+
       </div>
+
     </div>
-  </nav>
+
+  </div>
+</nav>
